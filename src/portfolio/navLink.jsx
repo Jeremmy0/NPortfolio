@@ -5,6 +5,7 @@ const NavLink = ({ text, faIconName, href }) => {
 
 
   const IconComponent = FaIcons[faIconName]
+  // console.log(IconComponent)
   return (
     <div className="ps-3 p-3 relative overflow-block group">
       {IconComponent && (
