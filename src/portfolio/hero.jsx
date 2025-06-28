@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full bt  "> 
         <div className="container relative bx"> 
           {/* this creates the dashed divider in the center  */}
-          <div className="w-[33.3333333%] h-full bxd border-dashed border-x border-x-white absolute top-0 left-1/2 -translate-x-1/2 -z-10">dgf</div>
+          <div className="w-[33.3333333%] h-full bxd border-dashed border-x border-x-white absolute top-0 left-1/2 -translate-x-1/2 -z-10"></div>
 
 
           <div className="  pt-35 pb-7">
