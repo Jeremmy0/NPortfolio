@@ -1,7 +1,7 @@
 import Nav from"../portfolio/nav"
-import Hero from"../portfolio/Hero"
-import About from"../portfolio/About"
-import Footer from"../portfolio/Footer"
+import Hero from"../portfolio/hero"
+import About from"../portfolio/about"
+import Footer from"../portfolio/footer"
 // import NewNav from"./components/NewNav"
 // import NewHero from"./components/NewHero"  
 const Home = ()=>{
