@@ -1,7 +1,23 @@
+"use client";
+import React, { useEffect, useState } from 'react';
+import { FaClock, FaEnvelope, FaLandmark, FaLocationArrow, FaMap, FaMapMarker, FaMapMarkerAlt } from "react-icons/fa"
 import Cta from "./cta"
 import Tag from "./tag"
 
 const Hero = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+  
+  const hour = currentTime.getHours().toString().padStart(2, "0");
+  const minute = currentTime.getMinutes().toString().padStart(2, "0");
+  const second = currentTime.getSeconds().toString().padStart(2, "0");
+  const timeNow = new Date();
+
   return (
     <div>
       <div className="w-full bt  "> 
@@ -30,6 +46,25 @@ const Hero = () => {
             </div>
           </div>
          </div>
+
+         {/* this is the section where the location is, its outside of the container because the width is full  */}
+         <div className=" bt bb">
+          <div className="container bx ">
+            <div className="grid grid-cols-3">
+                <div className="flex items-center justify-center py-3">
+                <p className="text-white/60 text-sm flex gap-1"><FaMapMarkerAlt className="place-self-center"/> Lagos, Nigeria</p>
+              </div>
+              <div className="flex items-center justify-center bxd ">
+                <p className="text-white/60 text-sm flex gap-1"><FaEnvelope className="place-self-center"/> Ayoolajeremy@gmail.com</p>
+            </div>
+              <div className="flex items-center justify-center py-3">
+                <p className="text-white/60 text-sm flex gap-1"><FaClock className="place-self-center"/> {hour}:{minute}:{second}</p>
+            </div>
+            </div>
+          </div>
+         </div>
+
+
       </div>
     </div>
   )
