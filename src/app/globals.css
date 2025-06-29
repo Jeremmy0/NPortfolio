@@ -37,7 +37,7 @@ body {
     @apply w-[80%] justify-self-center  
   }
   .by{
-    @apply  border-y-[0.5px] border-y-[var(--background)]/10
+    @apply  border-y-[0.5px] border-y-[var(--foreground)]/10
   }
   .bx{
     @apply border-x-white/10 border-x-[0.5px] 
