@@ -6,6 +6,7 @@
 :root {
   --background: #F9FAFB;
   --foreground: #111827;
+  --accent: 008000;
 }
 .dark {
   --foreground: #F9FAFB;
