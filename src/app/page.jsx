@@ -2,14 +2,16 @@ import Nav from"../portfolio/nav"
 import Hero from"../portfolio/hero"
 import About from"../portfolio/about"
 import Footer from"../portfolio/footer"
+import Highlights from "@/portfolio/highlights"
 // import NewNav from"./components/NewNav"
 // import NewHero from"./components/NewHero"  
 const Home = ()=>{
 return(
     <div className="w-full min-h-screen   ">
         
-            <Nav/>
+            <Nav className=""/>
             <Hero/>
+            <Highlights/>
             <About/>
             {/* <Footer/> */}
     </div>
