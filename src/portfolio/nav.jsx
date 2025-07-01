@@ -1,3 +1,4 @@
+"use client"
 import { Fasthand } from "next/font/google";
 // import { FaLock, FaShieldAlt, FaFileLines, FaBolt,FaMoneyBill, FaStar, FaShield , FaHome, FaSearch, FaStickyNote, FaArrowRight, FaBriefcase, FaLightbulb, FaUser} from "react-icons/fa"
 import NavLink from "./navLink";
@@ -25,7 +26,7 @@ const Nav = () => {
           {/* this is the divider */}
           <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  hidden md:flex"></div>
 
-          <Cta text={"Contact me"} className="bg-white text-black/80"/>
+          <Cta text={"Contact me"} className=""/>
 
           {/* Hamburger */}
           <div className="md:hidden "></div>

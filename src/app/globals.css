@@ -7,17 +7,21 @@
   --background: #F9FAFB;
   --foreground: #111827;
 }
-@media (prefers-color-scheme: dark) {
+.dark {
+  --foreground: #F9FAFB;
+  --background: #111827;
+}
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background:#111827;
     --foreground: #F9FAFB;
   }
-}
+} */
 @theme inline {
   --background-color:#F9FAFB ;
   --foreground-color:#111827 ;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
 
 }
 
