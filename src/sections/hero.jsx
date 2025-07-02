@@ -52,7 +52,7 @@ const Hero = () => {
       >
         {isDark ? <FaSun/> : <FaMoon/>}
       </button>
-      <div className="w-full bt">
+      <div className="w-full bt z-10">
         <div className="container relative bx overflow-visible">
           <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>
           <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 "></div>

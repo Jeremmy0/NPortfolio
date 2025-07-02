@@ -2,7 +2,7 @@
 
 const Highlights = () => {
   return (
-    <div className="w-full py-10 px-5">
+    <div className="w-full py-10 px-5 z-10">
         {/* the text on the highlight section  */}
         <div className=" ">
             <div className=""><p className="text-[var(--foreground)]/30  dark:text-[var(--foreground)]/30  flex">Some Highlights from the past year </p>

@@ -4,7 +4,7 @@ import SpecificWork from "../components/specificWork"
 const Works = ()=>{
 return(
     <>
-    <div className="w-full by">
+    <div className="w-full by z-10">
         <div className="container bx relative ">
           <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>
            <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 "></div>

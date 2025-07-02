@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa"
 
 const footer = () => {
   return (
-    <div className="w-fill by">
+    <div className="w-fill by z-10">
       <div className="container bx relative pb-4">
           {/* <DashedCenter/> */}
         {/* <div className="grid grid-cols-3 p-30"> */}
