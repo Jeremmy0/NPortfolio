@@ -9,8 +9,11 @@
   --accent: 008000;
 }
 .dark {
-  --foreground: #F9FAFB;
+  --foreground: #ffffffb3;
   --background: #111827;
+}
+.scrollbar-none::-webkit-scrollbar{
+  display:none;
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -47,7 +50,7 @@ body {
     @apply dark:border-x-[var(--foreground)]/30 border-x-black/30  border-x-[0.5px] 
   }
   .bt{
-    @apply dark:border-t-[var(--foreground)]/30 border-x-black/30  border-t-[0.5px] 
+    @apply dark:border-t-[var(--foreground)]/30 border-t-black/30  border-t-[0.5px] 
   }
   .bb{
     @apply dark:border-b-[var(--foreground)]/30 border-x-black/30  border-b-[0.5px] 

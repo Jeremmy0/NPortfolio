@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { FaClock, FaEnvelope, FaMapMarkerAlt, FaMoon, FaSun } from "react-icons/fa";
-import Cta from "./cta";
-import Tag from "./tag";
+import { FaClock, FaEnvelope, FaMapMarkerAlt, FaMoon, FaSun, FaPowerOn, FaPowerOff} from "react-icons/fa";
+import Cta from "../components/cta";
+import Tag from "../components/tag";
+import DashedCenter from '../components/dashedCenter';
 
 const Hero = () => {
   const [currentTime, setCurrentTime] = useState(null);
@@ -49,14 +50,14 @@ const Hero = () => {
         className="fixed top-4 right-4 z-50 p-2 rounded-full bg-[var(--background)] border border-[var(--foreground)]/30 dark:bg-[var(--foreground)] dark:text-black text-[var(--foreground)] shadow transition"
         aria-label="Toggle dark mode"
       >
-        {isDark ? <FaSun /> : <FaMoon />}
+        {isDark ? <FaSun/> : <FaMoon/>}
       </button>
       <div className="w-full bt">
         <div className="container relative bx overflow-visible">
           <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>
           <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 "></div>
           {/* this creates the dashed divider in the center  */}
-          <div className="w-[33.3333333%] h-full bxd border-dashed border-x  absolute top-0 left-1/2 -translate-x-1/2 -z-10"></div>
+          <DashedCenter />
           <div className="pt-34 pb-7 z-10 ">
             <div className="md:justify-self-center w-[80%] px-6   place-items-center ">
               <div className="inline-flex p-3 rounded-full border-  border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 mb-2">

@@ -1,8 +1,8 @@
 "use client"
 import { Fasthand } from "next/font/google";
 // import { FaLock, FaShieldAlt, FaFileLines, FaBolt,FaMoneyBill, FaStar, FaShield , FaHome, FaSearch, FaStickyNote, FaArrowRight, FaBriefcase, FaLightbulb, FaUser} from "react-icons/fa"
-import NavLink from "./navLink";
-import Cta from "./cta";
+import NavLink from "../components/navLink";
+import Cta from "../components/cta";
 
 
 const Nav = () => {
