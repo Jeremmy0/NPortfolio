@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Location and time section */}
-        <div className="bt bb ">
+        <div className="bt bb z-10">
             <div className="container bx relative">
               {/* Edge circle  */}
               <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>

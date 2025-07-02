@@ -34,7 +34,7 @@ const SpecificWork = () => {
                         </a> */}
                     </div>
                     {/* Second column: image with min height 50vh, scale down, scale to normal on hover */}
-                    <a href={work.link}   target="_blank" rel="noopener noreferrer" className="flex items-center justify-center col-span-2 col-start-2 bg-green-100 dark:bg-green-900  shadow-lg min-h-[50vh] ">
+                    <a href={work.link}   target="_blank" rel="noopener noreferrer" className="flex items-center justify-center col-span-2 col-start-2 bg-green-100 dark:bg-green-900  shadow-lg min-h-[50vh] z-60">
                         <img 
                             src={work.image} 
                             alt={`${work.title} screenshot`} 
