@@ -61,8 +61,9 @@ const Hero = () => {
           <div className="pt-34 pb-7 z-10 ">
             <div className="md:justify-self-center w-[80%] px-6   place-items-center ">
               <div className="inline-flex p-3 rounded-full border-  border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 mb-2">
-              <div className="size-34 rounded-full overflow-hidden   -z-10">
-                <img className="object-top -mt-13  " src="/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah " />
+              <div className="size-34 rounded-full overflow-hidden ">
+                <img className="object-top -mt-13  " src="/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah" />
+
                 </div>
               </div>
               <div className="items-center ">
