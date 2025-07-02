@@ -9,8 +9,8 @@ const Nav = () => {
   return (
     <>
       
-      <div className="container  justify-self-center   py-3 top-0 sticky  -mb-5 text-[var(--foreground)] ">
-        <div className=" px-3 md:justify-self-center md:min-w-[70%] md:max-w-[80%] lg:min-w-[45%] lg:max-w-[50%] bg-white/5 backdrop-blur-sm border-1 border-gray-400/10 md:ps-2 md:py-2  rounded-xl  flex  justify-between  items-center   z-100 " >
+      <div className="container  justify-self-center   py-3 top-0 sticky  -mb-5 text-[var(--foreground)] z-100 ">
+        <div className=" px-3 md:justify-self-center md:min-w-[70%] md:max-w-[80%] lg:min-w-[45%] lg:max-w-[50%] bg-white/5 backdrop-blur-sm border-1 border-gray-400/10 md:ps-2 md:py-2  rounded-xl  flex  justify-between  items-center   " >
             <NavLink text={"Home"} faIconName="FaHome" href={"/"}/>
           {/* this is the divider */}
           <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40 hidden md:flex"></div>

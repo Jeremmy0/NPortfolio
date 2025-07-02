@@ -47,7 +47,7 @@ const Hero = () => {
             {/* Toggle Dark Mode Button */}
       <button
         onClick={toggleDarkMode}
-        className="fixed top-4 right-4 z-50 p-2 rounded-full bg-[var(--background)] border border-[var(--foreground)]/30 dark:bg-[var(--foreground)] dark:text-black text-[var(--foreground)] shadow transition"
+        className="fixed bottom-4 right-4 z-50 p-2 rounded-full text-white bg-[var(--foreground)] border border-[var(--foreground)]/30 dark:bg-[var(--foreground)] dark:text-black shadow transition"
         aria-label="Toggle dark mode"
       >
         {isDark ? <FaSun/> : <FaMoon/>}
