@@ -66,7 +66,7 @@ const Hero = () => {
               <div className="items-center ">
                 <h1 className="text-6xl font-light py-4 text-center"> Hey, I'm Ayoola Jeremiah </h1>
                 {/* <h1 className="text-4xl font-light pb-2 text-center"> A Dreamer and a Creative Designer. </h1> */}
-                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus, aspernatur adipisci expedita porro ullam, quia dolor hic soluta sint laborum corporis debitis distinctio, incidunt officia vitae placeat vero voluptates.</p>
+                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae sequi modi est sunt harum velit quidem officia incidunt corporis, exercitationem impedit et, cupiditate nemo fugit esse dolor quae optio? .</p>
               </div>
               <div className="flex gap-2 mt-3 justify-center ">
                 <Cta text={"Download Resume"} className="" href={"/"}/>
