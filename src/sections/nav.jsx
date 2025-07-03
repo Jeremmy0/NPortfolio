@@ -9,13 +9,13 @@ const Nav = () => {
   return (
     <>
       
-      <div className="container  justify-self-center   py-3 top-0 sticky  -mb-5 text-[var(--foreground)] z-100 ">
+      <div className="  w-full md:container  justify-self-center   md:py-3 md:top-0 md:sticky   text-[var(--foreground)] z-100 ">
         <div className=" px-3 md:justify-self-center md:min-w-[70%] md:max-w-[80%] lg:min-w-[45%] lg:max-w-[50%] bg-white/5 backdrop-blur-sm border-1 border-gray-400/10 md:ps-2 md:py-2  rounded-xl  flex  justify-between  items-center   " >
             <NavLink text={"Home"} faIconName="FaHome" href={"/"}/>
           {/* this is the divider */}
-          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40 hidden md:flex"></div>
+          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40 "></div>
           {/* nav links */}
-          <div className="md:flex gap-2 text-baseline hidden  me-2 ">
+          <div className="flex gap-2 text-baseline   me-2 ">
               <NavLink text={"About"} faIconName="FaUser" href={"#about"}/>
               <NavLink text={"Resume"} faIconName="FaStickyNote" href={"#resume"}/>
               <NavLink text={"Experience"} faIconName="FaBriefcase" href={"#experience"}/>
@@ -24,12 +24,12 @@ const Nav = () => {
           </div>
           
           {/* this is the divider */}
-          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  hidden md:flex"></div>
+          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  "></div>
 
-          <Cta text={"Contact me"} className=""/>
+          <Cta text={"Contact me"} className="" FaIconName="FaSun"/>
 
           {/* Hamburger */}
-          <div className="md:hidden "></div>
+          {/* <div className="md:hidden "></div>  */}
         </div>
       </div>
      

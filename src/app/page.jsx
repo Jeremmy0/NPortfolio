@@ -8,9 +8,11 @@ import Works from "../sections/works"
 // import NewHero from"./components/NewHero"  
 const Home = ()=>{
 return(
-    <div className="bg-black  p-3 fixed top-0 left-0 w-full h-full ">
-        <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto  h-full scroll-smooth  scrollbar-none">
+    <div className="bg-black  p-3 fixed top-0 left-0 w-full h-full flex flex-col-reverse justify-between">
+        <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto h-[8vh]  content-center px-5">
             <Nav className=""/>
+        </div>
+        <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto  h-[87vh] scroll-smooth  scrollbar-none">
             <Hero/>
             <Highlights/>
             <Works/>
