@@ -4,9 +4,12 @@ import About from"../sections/about"
 import Footer from"../sections/footer"
 import Highlights from "@/sections/highlights"
 import Works from "../sections/works"
+import { TapeSection } from "@/sections/tape"
+import { HeroSection } from "@/sections/heros"
 // import NewNav from"./components/NewNav"
 // import NewHero from"./components/NewHero"  
 const Home = ()=>{
+ 
 return(
     <div className="bg-black  p-3 fixed top-0 left-0 w-full h-full ">
         <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto  h-full scroll-smooth  scrollbar-none">
@@ -14,6 +17,7 @@ return(
             <Hero/>
             <Highlights/>
             <Works/>
+            <TapeSection/>
             <About/>
             <Footer/>
         </div>
