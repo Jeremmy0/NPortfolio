@@ -2,11 +2,9 @@ import * as FaIcons from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa"
 
 const Cta = ({text , className,href, IconName }) => {
-  console.log("Cta props:", { text, className, href, IconName });
 
   const AIconName = FaIcons[IconName] || FaArrowRight;
   // Fallback to FaArrowRight if IconName is not provided or not found
-console.log(text , AIconName, FaIcons[IconName], "IconName:", IconName)
   return (
     // <div className="">
     //     <button className="py-2 px-4 rounded-md content-center text-center bg-white text-black/80 text-lg font-semibold">{text}</button>

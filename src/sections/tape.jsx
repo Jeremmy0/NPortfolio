@@ -53,7 +53,7 @@ export const TapeSection = () => {
                     <span className="text-gray-900 uppercase font-extrabold text-sm">
                       {word}
                     </span>
-                    <img src={`${StarIcon}`} className="size-6 text-gray-900 -rotate-12" />
+                    <img src={`/icons/star.svg`} className="size-6 text-gray-900 -rotate-12" />
                   </div>
                 ))}
               </Fragment>

@@ -6,8 +6,8 @@ const works = [
      companyName: "Company A",
      title: "Project A",
      description: "Description of Project A",
-     image: "/Screenshot(157).png",
-     companyLogo: "/Screenshot(157).png",
+     image: "/images/Screenshot(157).png",
+     companyLogo: "/images/Screenshot(157).png",
      workTags: ["Web Development","Frontend"],     
      link: "https://example.com/project-a",
     },
@@ -15,8 +15,8 @@ const works = [
      companyName: "Company B",
      title: "Project B",
      description: "Description of Project B",
-     image: "/globe.svg",
-     companyLogo: "/globe.svg",
+     image: "/images/globe.svg",
+     companyLogo: "/images/globe.svg",
      workTags: ["Web Development","Frontend"],     
      link: "https://example.com/project-b"
     },
@@ -24,8 +24,8 @@ const works = [
      companyName: "Company C",
      title: "Project C",
      description: "Description of Project C",
-     image: "/Screenshot(157).png",
-     companyLogo: "/Screenshot(157).png",
+     image: "/images/Screenshot(157).png",
+     companyLogo: "/images/Screenshot(157).png",
      workTags: ["Web Development","Frontend"],     
      link: "https://example.com/project-c"
     },
@@ -33,8 +33,8 @@ const works = [
      companyName: "Company D",
      title: "Project D",
      description: "Description of Project D",
-    image: "/Screenshot(157).png",
-     companyLogo: "/Screenshot(157).png",
+    image: "/images/Screenshot(157).png",
+     companyLogo: "/images/Screenshot(157).png",
      workTags: ["Web Development","Frontend"],     
      link: "https://example.com/project-d"
     }
