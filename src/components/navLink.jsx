@@ -37,4 +37,3 @@ const NavLink = ({ text, faIconName, href, MobileOpen }) => {
 
 export default NavLink;
 
-stick
