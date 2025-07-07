@@ -3,20 +3,22 @@ import { Fasthand } from "next/font/google";
 // import { FaLock, FaShieldAlt, FaFileLines, FaBolt,FaMoneyBill, FaStar, FaShield , FaHome, FaSearch, FaStickyNote, FaArrowRight, FaBriefcase, FaLightbulb, FaUser} from "react-icons/fa"
 import NavLink from "../components/navLink";
 import Cta from "../components/cta";
+import { useState } from "react";
 
 
 const Nav = () => {
+  const [open, setOpen] = useState(false);
 
   return (
     <>
       
-      <div className="  w-full md:container  justify-self-center   md:py-3 top-0 sticky   text-[var(--foreground)] z-100 ">
-        <div className=" px-3 md:justify-self-center md:min-w-[70%] md:max-w-[80%] lg:min-w-[45%] lg:max-w-[50%] bg-white/5 backdrop-blur-sm border-1 border-gray-400/10 md:ps-2 md:py-2  rounded-xl  flex  justify-between  items-center   " >
+      <div className="  w-full  text-[var(--foreground)] z-50  top-4 sticky   ">
+        <div className=" px-3  bg-white/5 backdrop-blur-sm border-1 border-gray-400/10  rounded-xl  flex justify-self-center  justify-center  items-center  md:ps-2 md:py-2 " >
             <NavLink text={"Home"} faIconName="FaHome" href={"/"}/>
           {/* this is the divider */}
-          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40 "></div>
+          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40 mx-6 hidden md:flex" ></div>
           {/* nav links */}
-          <div className="flex gap-2 text-baseline   me-2 ">
+          <div className=" gap-2 text-baseline hidden md:flex ">
               <NavLink text={"About"} faIconName="FaUser" href={"#about"}/>
               <NavLink text={"Resume"} faIconName="FaStickyNote" href={"#resume"}/>
               <NavLink text={"Experience"} faIconName="FaBriefcase" href={"#experience"}/>
@@ -25,12 +27,45 @@ const Nav = () => {
           </div>
           
           {/* this is the divider */}
-          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  "></div>
+          <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  mx-6 hidden md:flex"></div>
 
-          <Cta text={""} className="" IconName={"FaTelephone" }/>
+          <Cta text={"Book a Call"} className="hidden md:flex" IconName={"FaTelephone" }/>
 
-          {/* Hamburger */}
-          {/* <div className="md:hidden "></div>  */}
+          {/* Hamburger  */}
+          <div className="md:hidden">
+            <button
+              aria-label={open ? "Close menu" : "Open menu"}
+              onClick={() => setOpen(!open)}
+              className="relative w-10 h-10 flex flex-col items-center justify-center group focus:outline-none"
+            >
+              {/* Hamburger lines */}
+              <span
+                className={`block h-0.5 w-7 bg-[var(--foreground)] rounded transition-all duration-300 ease-in-out
+                  ${open ? "rotate-45 translate-y-2" : ""}
+                `}
+              />
+              <span
+                className={`block h-0.5 w-7 bg-[var(--foreground)] rounded transition-all duration-300 ease-in-out my-1
+                  ${open ? "opacity-0" : ""}
+                `}
+              />
+              <span
+                className={`block h-0.5 w-7 bg-[var(--foreground)] rounded transition-all duration-300 ease-in-out
+                  ${open ? "-rotate-45 -translate-y-2" : ""}
+                `}
+              />
+            </button>
+            {/* Example: Mobile menu (optional, for demonstration) */}
+            {open && (
+              <div className="absolute top-16 right-4 bg-white dark:bg-black rounded-xl shadow-lg p-6 z-50 flex flex-col gap-4 w-48">
+                <NavLink text={"About"} faIconName="FaUser" href={"#about"} />
+                <NavLink text={"Resume"} faIconName="FaStickyNote" href={"#resume"} />
+                <NavLink text={"Experience"} faIconName="FaBriefcase" href={"#experience"} />
+                <NavLink text={"My Works"} faIconName="FaLightbulb" href={"#personalWork"} />
+                <Cta text={"Book a Call"} className="" IconName={"FaTelephone"} />
+              </div>
+            )}
+          </div> 
         </div>
       </div>
      

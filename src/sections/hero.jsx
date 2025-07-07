@@ -51,51 +51,26 @@ const Hero = () => {
       >
         {isDark ? <FaSun/> : <FaMoon/>}
       </button>
-      <div className="w-full bt z-10">
-        <div className="container relative bx overflow-visible">
-          <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>
-          <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 "></div>
-          <DashedCenter />
-          <div className="pt-34 pb-7 z-10 ">
-            <div className="md:justify-self-center w-[80%] px-6   place-items-center ">
-              <div className="inline-flex p-3 rounded-full border-  border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 mb-2 ">
-              <div className="size-34 rounded-full overflow-hidden z-90">
-                <img className="object-top -mt-13  z-90" src="/images/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah" />
-                </div>
+      <div className="w-full ">
+        <div className="container relative pt-16 md:20 lg:pt-28 pb-7">
+            <div className="justify-self-center w-full md:w-[80%] px-6   place-items-center ">
+              <div className="">
+                <img className="" src="/images/memoji-computer.png " width={200}  alt="A memeoji with computer " />
               </div>
               <div className="items-center ">
-                <h1 className="text-6xl font-light py-4 text-center"> Hey, I'm Ayoola Jeremiah </h1>
+                <h1 className="h-text font-light py-4 text-center"> Hey, I'm Ayoola Jeremiah </h1>
                 <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus, aspernatur adipisci expedita porro ullam, quia dolor hic soluta sint laborum corporis debitis distinctio, incidunt officia vitae placeat vero voluptates.</p>
               </div>
-              <div className="flex gap-2 mt-3 justify-center ">
-                <Cta text={"Download Resume"} className="" href={"/"}/>
-                <Tag text={"Available For Freelancing "} />
-              </div>
-              <div className="flex "></div>
-            </div>
-          </div>
-        </div>
-        <div className="bt bb z-10">
-            <div className="container bx relative">
-              <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 "></div>
-            <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 "></div>
-            <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 "></div>
-            <div className="size-3 bg-[var(--foreground)] dark:bg-[var(--foreground)] rounded-full absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 "></div>
-            <div className="grid grid-cols-3">
-              <div className="flex items-center justify-center py-3">
-                <p className="text-white/60 text-sm flex gap-1"><FaMapMarkerAlt className="place-self-center" /> Lagos, Nigeria</p>
-              </div>
-              <div className="flex items-center justify-center bxd ">
-                <p className="text-white/60 text-sm flex gap-1"><FaEnvelope className="place-self-center" /> Ayoolajeremy@gmail.com</p>
-              </div>
-              <div className="flex items-center justify-center py-3">
-                <p className="text-white/60 text-sm flex gap-1">
-                  <FaClock className="place-self-center" /> {hour}:{minute}:{second}
-                </p>
+              <div className="flex flex-col md:flex-row gap-2 mt-3 justify-center  ">
+                <div className="place-self-center"> 
+                  <Cta text={"Download Resume"} className="" href={"/"}/>
+                </div>
+                <div className="">
+                  <Tag text={"Available For New Projects "} />
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   )

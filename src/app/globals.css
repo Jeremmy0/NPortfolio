@@ -43,6 +43,9 @@ body {
 .container{
   @apply w-[90%] md:w-[80%] justify-self-center;
 }
+.h-text{
+  @apply text-2xl md:text-4xl lg:text-6xl 
+}
   .by{
     @apply  border-y-[0.5px] dark:border-y-[var(--foreground)]/30 border-y-black/30 
   }
@@ -62,5 +65,29 @@ body {
     .hero-ring {
     @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
   }
+  .shimmer {
+  position: relative;
+  overflow: hidden;
 }
-/* border-y-[var(--foreground)]/10 */
+
+.shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.4) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  animation: shimmer-move 1.5s infinite;
+}
+
+@keyframes shimmer-move {
+  100% {
+    left: 125%;
+  }
+}}
