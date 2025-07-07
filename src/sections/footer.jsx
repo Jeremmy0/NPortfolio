@@ -40,7 +40,7 @@ const footer = () => {
             <form action="/jja" className="mt-2">
               <div className="flex gap-1">
                 <input type="text" className="bg-white rounded-full ps-2 text-black flex-10/12 "/>
-                <Cta  className="flex-2/12"/>
+                <Cta  className="flex-2/12 "/>
               </div>
             </form>
           </div>

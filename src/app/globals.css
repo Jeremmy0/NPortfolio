@@ -44,7 +44,7 @@ body {
   @apply w-[90%] md:w-[80%] justify-self-center;
 }
 .h-text{
-  @apply text-2xl md:text-4xl lg:text-6xl 
+  @apply text-3xl md:text-4xl lg:text-5xl 
 }
   .by{
     @apply  border-y-[0.5px] dark:border-y-[var(--foreground)]/30 border-y-black/30 
