@@ -59,7 +59,7 @@ const Hero = () => {
               </div>
               <div className="items-center ">
                 <h1 className="h-text font-light py-4 text-center"> Hello, I'm Ayoola Jeremiah </h1>
-                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  "> I specialize in transforming designs into functional, high-performance , scalable websites and web applications..</p>
+                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  ">I specialize in transforming designs into functional, high-performance , scalable websites and web applications. Minimalist by design. Precise by nature. Built to convert, crafted to impress</p>
               </div>
               <div className="flex flex-col md:flex-row gap-2 mt-3 justify-center  ">
                 <div className="place-self-center"> 
