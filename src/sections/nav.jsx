@@ -23,9 +23,9 @@ const Nav = () => {
           {/* nav links */}
           <div className=" gap-2 text-baseline hidden md:flex ">
               <NavLink text={"About"} faIconName="FaUser" href={"#about"}/>
-              <NavLink text={"Resume"} faIconName="FaStickyNote" href={"#resume"}/>
-              <NavLink text={"Experience"} faIconName="FaBriefcase" href={"#experience"}/>
-              <NavLink text={"My Works"} faIconName="FaLightbulb" href={"#personalWork"}/>
+              <NavLink text={"#Resume"} faIconName="FaStickyNote" href={"#resume"}/>
+              <NavLink text={"#Experience"} faIconName="FaBriefcase" href={"#experience"}/>
+              <NavLink text={"#My Works"} faIconName="FaLightbulb" href={"#personalWork"}/>
 
           </div>
           

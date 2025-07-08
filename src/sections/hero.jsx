@@ -51,7 +51,7 @@ const Hero = () => {
       >
         {isDark ? <FaSun/> : <FaMoon/>}
       </button>
-      <div className="w-full ">
+      <div className="w-full " id={""}>
         <div className="container relative pt-16 md:20 lg:pt-28 pb-7">
             <div className="justify-self-center w-full md:w-[80%]   place-items-center ">
               <div className="">
