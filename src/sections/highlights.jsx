@@ -22,22 +22,22 @@ const Highlights = () => {
            {/* h-[300px] */}
             <div className=" inline-flex w-[20%]  p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-3 ">
               <div className="rounded-md overflow-hidden   -z-10">
-                <img className="object-fit  " src="/images/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah " />
+                <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
             <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-4 ">
               <div className="rounded-md overflow-hidden   -z-10">
-                <img className="object-fit  " src="/images/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah " />
+                <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
             <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-2 ">
               <div className="rounded-md overflow-hidden   -z-10">
-                <img className="object-fit  " src="/images/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah " />
+                <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
             <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-3 ">
               <div className="rounded-md overflow-hidden   -z-10">
-                <img className="object-fit  " src="/images/IMG-20231127-WA0052.jpg" alt="Ayoola Jeremiah " />
+                <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
         </div>
