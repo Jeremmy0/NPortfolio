@@ -11,16 +11,16 @@ import { HeroSection } from "@/sections/heros"
 const Home = ()=>{
  
 return(
-    <div className="bg-black  p-3 fixed top-0 left-0 w-full h-full ">
-        <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto  h-full scroll-smooth  scrollbar-none">
+    <div className=" ">
+        {/* <div className="bg-[var(--background)] dark:bg-[var(--background)] rounded-2xl overflow-y-auto  h-full scroll-smooth  scrollbar-none"> */}
             <Nav className=""/>
             <Hero/>
+            <About/>
             <Highlights/>
             <Works/>
             <TapeSection/>
-            <About/>
             <Footer/>
-        </div>
+        {/* </div> */}
 
     </div>
 )

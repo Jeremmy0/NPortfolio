@@ -7,6 +7,7 @@
   --background: #F9FAFB;
   --foreground: #111827;
   --accent: 008000;
+
 }
 .dark {
   --foreground: #ffffffb3;
@@ -34,7 +35,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-work-sans); 
  
 
 }

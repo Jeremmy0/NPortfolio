@@ -1,8 +1,29 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Inter,Space_Grotesk, Work_Sans } from "next/font/google";
 import "./globals.css";
 // import { GSAPProvider}   from '@gsap/react'
 import { gsap } from "gsap";
 
+const sGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'], // regular, medium, semi-bold
+  variable: '--font-space-grotesk',
+})
+const wSans= Work_Sans({
+  subsets:["latin"],
+  weight:["400"],
+  variable: "--font-work-sans"
+})
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['600', '700'], // bold
+  variable: '--font-poppins',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400'], // regular
+  variable: '--font-inter',
+})
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable}  ${poppins.variable} ${inter.variable} ${wSans.variable} ${sGrotesk.variable}  antialiased `}
       >
         {children}
       </body>
