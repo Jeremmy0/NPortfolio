@@ -52,14 +52,15 @@ const Hero = () => {
         {isDark ? <FaSun/> : <FaMoon/>}
       </button>
       <div className="w-full " id={""}>
+        <div className=" w-full h-full absolute top-0 left-0 "> </div>
         <div className="container relative pt-16 md:20 lg:pt-28 pb-7">
             <div className="justify-self-center w-full md:w-[80%]   place-items-center ">
               <div className="">
                 <img className="" src="/images/memoji-computer.png " width={200}  alt="A memeoji with computer " />
               </div>
               <div className="items-center ">
-                <h1 className="h-text font-light py-4 text-center"> Hello, I'm Ayoola Jeremiah </h1>
-                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3  ">I specialize in transforming designs into functional, high-performance , scalable websites and web applications. Minimalist by design. Precise by nature. Built to convert, crafted to impress</p>
+                <h1 className="h-text font-light py-4 text-center font-headline"> Hello, I'm Ayoola Jeremiah </h1>
+                <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3   text-center">I specialize in transforming designs into functional, high-performance , scalable websites and web applications. Minimalist by design. Precise by nature. Built to convert, crafted to impress</p>
               </div>
               <div className="flex flex-col md:flex-row gap-2 mt-3 justify-center  ">
                 <div className="place-self-center"> 
