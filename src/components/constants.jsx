@@ -15,8 +15,8 @@ const works = [
      companyName: "Company B",
      title: "Project B",
      description: "Description of Project B",
-     image: "/images/globe.svg",
-     companyLogo: "/images/globe.svg",
+     image: "/images/Screenshot(157).png",
+     companyLogo: "/images/Screenshot(157).png",
      workTags: ["Web Development","Frontend"],     
      link: "https://example.com/project-b"
     },
