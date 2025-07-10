@@ -61,12 +61,12 @@ const Nav = () => {
             {/* Example: Mobile menu (optional, for demonstration) */}
             {open && (
               <>
-              <div className="absolute top-10 left-0 bg-[var(--background)]/50 dark:bg-[var(--background)]/50 backdrop-blur-2xl  border-1 border-gray-400/10  w-full rounded-b-xl  p-6 z-40 flex flex-col gap-4  items-center  ">
+              <div className="absolute top-10 left-0 bg-[var(--background)] dark:bg-[var(--background)] backdrop-blur-2xl  border-1 border-t-0  w-full rounded-b-xl  p-6 z-40 flex flex-col gap-4  items-center border-gray-300 ">
                 <NavLink MobileOpen={1} text={"About"} faIconName="FaUser" href={"#about"} />
                 <NavLink MobileOpen={1} text={"Resume"} faIconName="FaStickyNote" href={"#resume"} />
                 <NavLink MobileOpen={1} text={"Experience"} faIconName="FaBriefcase" href={"#experience"} />
                 <NavLink MobileOpen={1} text={"My Works"} faIconName="FaLightbulb" href={"#personalWork"} />
-                <Cta text={"Book a Call"} className="" IconName={"FaTelephone"} />
+                <Cta text={"Book a Call"} className="shimmer" IconName={"FaTelephone"} />
               </div>
               </>
             )}

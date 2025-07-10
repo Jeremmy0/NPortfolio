@@ -7,9 +7,9 @@ const SpecificWork = () => {
     return (
          <div>
             {works.map((work, idx) => (
-                <div key={idx} className="grid grid-cols-3 bb ">
+                <div key={idx} className="grid grid-col md:grid-cols-3 bb p-4 md:p-0 ">
                     {/* First column: center content, smaller logo */}
-                    <div className="flex flex-col justify-center px-4">
+                    <div className="flex flex-col md:flex-col justify-center px-4 mb-3 md:mb-0">
                         <div className="flex items-center gap-3 mb-2">
                             <img 
                                 src={work.companyLogo} 
@@ -34,11 +34,11 @@ const SpecificWork = () => {
                         </a> */}
                     </div>
                     {/* Second column: image with min height 50vh, scale down, scale to normal on hover */}
-                    <a href={work.link}   target="_blank" rel="noopener noreferrer" className="flex items-center justify-center col-span-2 col-start-2 bg-green-100 dark:bg-green-900  shadow-lg min-h-[50vh] z-60">
+                    <a href={work.link}   target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:col-span-2 md:col-start-2 bg-green-100 dark:bg-green-900  shadow-lg min-h-[20%] md:min-h-[50vh] z-60 flex-col">
                         <img 
                             src={work.image} 
                             alt={`${work.title} screenshot`} 
-                            className="w-full h-full max-h-[50vh] object-cover transform scale-90 hover:scale-100 transition-transform duration-300 object-center translate-y-4 hover:translate-y-0 "
+                            className="w-full h-full max-h-[50vh] object-cover transform md:scale-90 md:hover:scale-100 transition-transform duration-300 object-center md:translate-y-4 md:hover:translate-y-0 "
                         />
                     </a>
                 </div>

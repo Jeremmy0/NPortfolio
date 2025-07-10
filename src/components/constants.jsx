@@ -40,24 +40,7 @@ const works = [
     }
 ]
 
-const socialLinks = [
-    {logo:"",
-     socialName:"github",
-     link:"",   
-    },
-    {logo:"",
-     socialName:"github",
-     link:"",   
-    },
-    {logo:"",
-     socialName:"github",
-     link:"",   
-    },
-    {logo:"",
-     socialName:"github",
-     link:"",   
-    },
-]
+
 
 const breakpoints = {
   sm: 640,
@@ -66,7 +49,7 @@ const breakpoints = {
   xl: 1280,
   '2xl': 1536,
 };
-export {works, navLinks, socialLinks,breakpoints }
+export {works, navLinks, breakpoints }
 
 
 
