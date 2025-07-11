@@ -2,6 +2,8 @@ import { Geist, Geist_Mono, Poppins, Inter,Space_Grotesk, Work_Sans } from "next
 import "./globals.css";
 // import { GSAPProvider}   from '@gsap/react'
 import { gsap } from "gsap";
+// import { Provider } from "@/components/ui/provider"
+
 
 const sGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -41,11 +43,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className=""  suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable}  ${poppins.variable} ${inter.variable} ${wSans.variable} ${sGrotesk.variable}  antialiased `}
       >
-        {children}
+        {children} 
       </body>
     </html>
   );
