@@ -1,12 +1,14 @@
 "use client"
 import { useState } from 'react';
+import Image from 'next/image';
+import Cta from "@/components/cta"
 
 const projects = [
   {
     id: 1,
     title: 'Awesome WP Site',
     category: 'WordPress',
-    imageUrl: '/images/wp1.png',
+    imageUrl: '/images/jeremy.jpg',
     description: 'A WordPress theme I built for a client.',
     link: 'https://example.com/wp1',
   },
@@ -14,7 +16,7 @@ const projects = [
     id: 2,
     title: 'Custom React App',
     category: 'Custom',
-    imageUrl: '/images/custom1.png',
+    imageUrl: '/images/jeremy.jpg',
     description: 'A custom-built React application.',
     link: 'https://example.com/custom1',
   },
@@ -22,7 +24,7 @@ const projects = [
     id: 3,
     title: 'Another Project',
     category: 'WordPress',
-    imageUrl: '/images/wp2.png',
+    imageUrl: '/images/jeremy.jpg',
     description: 'Second WP project example.',
     link: 'https://example.com/wp2',
   },
@@ -36,17 +38,17 @@ export default function PortfolioTabs() {
     : projects.filter(p => p.category === tab);
 
   return (
-    <div className="max-w-5xl mx-auto p-4">
+    <div className="container mx-auto ">
       {/* Tab Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {['All', 'WordPress', 'Custom'].map(t => (
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`px-4 py-2 font-medium rounded-lg transition ${
+            className={`px-4 py-2 font-medium  transition ${
               tab === t
-                ? 'bg-blue-600 text-white shadow'
-                : 'bg-gray-200 text-gray-700'
+                ? 'text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-green-300 to-green-400 pb-2'
+                : 'text-lg text-[var(--foreground)]'
             }`}
           >
             {t}
@@ -55,36 +57,38 @@ export default function PortfolioTabs() {
       </div>
 
       {/* Project Cards */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(project => (
-          <a
-            key={project.id}
+          <div key={project.id} className=" p-2 rounded-xl bg-[var(--foreground)]/8 border border-[var(--foreground)]/20 ">
+             <a
+            
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative bg-gradient-to-br from-white to-gray-50 border-2 border-dashed border-gray-300 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition"
+            className="group"
           >
-            {/* Corner Boxes */}
-            <span className="absolute top-1 left-1 w-3 h-3 bg-black rounded-sm" />
-            <span className="absolute top-1 right-1 w-3 h-3 bg-black rounded-sm" />
-            <span className="absolute bottom-1 left-1 w-3 h-3 bg-black rounded-sm" />
-            <span className="absolute bottom-1 right-1 w-3 h-3 bg-black rounded-sm" />
-
-            {/* Project Image */}
-            <div className="h-40 bg-gray-100 overflow-hidden">
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-
-            {/* Project Info */}
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-sm">{project.description}</p>
+            <div className="w-full overflow-hidden rounded-xl shadow-md">
+              <div className="relative w-full h-56 md:h-64 lg:h-70 overflow-hidden">
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <div className="bg-[var(--background)] dark:bg-[var(--background)] p-4 relative">
+                {/* <div className="absolute bg-gradient-to-tl from-blue-400 via-green-300 to-green-400 size-40 rounded-full blur-90 bottom-0 right-0 "> </div> */}
+                <h3 className="text-lg font-semibold mb-2 text-black  dark:text-white ">{project.title}</h3>
+                <p className="text-sm text-[var(--foreground)]/80 dark:text-[var(--foreground)]/80 mb-3">
+                  {project.description}
+                </p>
+                <span className="">
+                  <Cta text="Visit Site" noStyle={1}/>
+                </span>
+              </div>
             </div>
           </a>
+          </div>
         ))}
       </div>
     </div>

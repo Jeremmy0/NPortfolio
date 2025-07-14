@@ -4,9 +4,11 @@ import About from"../sections/about"
 import Footer from"../sections/footer"
 import Highlights from "@/sections/highlights"
 import Portfolio from "../sections/portfolio"
+import PortfolioTabs from "../sections/portfolioTabs"
 import { TapeSection } from "@/sections/tape"
 import { HeroSection } from "@/sections/heros"
 import Qualifications from "@/sections/qualification"
+import TechStackSection from "@/sections/techStack"
 // import NewNav from"./components/NewNav"
 // import NewHero from"./components/NewHero"  
 const Home = ()=>{
@@ -18,7 +20,9 @@ return(
             <Hero/>
             <About/>
             <Qualifications/>
-            <Portfolio/>
+            <PortfolioTabs/>
+            {/* <Portfolio/> */}
+            <TechStackSection/>
             <TapeSection/>
             <Highlights/>
             <Footer/>
