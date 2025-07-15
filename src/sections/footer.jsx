@@ -25,7 +25,7 @@ const socialLinks = [
 const footer = () => {
   return (
     <div className="w-fill  z-10 relative rounded-t-3xl overflow-hidden text-black">
-      <div className="absolute top-0 left-0  bg-gradient-to-r from-emerald-300 to-sky-400 w-full h-full  opacity-70?????"></div>
+      <div className="absolute top-0 left-0  bg-gradient-to-r from-emerald-300 to-sky-400 w-full h-full  opacity-70"></div>
 
       <div className="container  relative pb-4">
           {/* <DashedCenter/> */}
