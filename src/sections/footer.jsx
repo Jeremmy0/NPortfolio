@@ -34,31 +34,24 @@ const footer = () => {
             <h2 className="mb-2 md:mb-5  text-3xl md:text-5xl">Contact Me</h2>
             <p className="text-center">My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.</p>
           </div>
-        {/* </div> */}
+        </div>
  
-      <div className="container  relative ">
-      </div>
-        {/* <DashedCenter/> */}
-        <div className="grid grid-col  md:grid-cols-3">
+      <div className="container  justify-between ">
 
           {/* grid */}
-          <div className="p-4 content-center "> 
+          <div className="p-4 content-center flex"> 
             <div className="flex gap-1 justify-center">
             {socialLinks.map((link, idx)=>{
               const Logo = FaIcons[link.logo]
               return(
-            <div key={idx} className="px-2 py-1 rounded-md border  gap-1 inline-flex">
+            <div key={idx} className="px-2 py-1 gap-1 inline-flex">
               <Logo className="place-self-center text-3xl "/>
             </div>
               )
            })}             
             </div>
+          </div>
 
-          </div>
-          {/* grid */}
-          <div className=" md:p-4 "> 
-           
-          </div>
           {/* grid */}          <div className="p-4 "> 
             <h3 className="">Send an email or Dm & i'll get back to you ASAP</h3>
             <form action="/jja" className="mt-2">
@@ -68,27 +61,15 @@ const footer = () => {
               </div>
             </form>
           </div>
-        </div>
 
       </div>
       {/*  */}
-      <div className="container  relative ">
-        {/* <DashedCenter/> */}
-        <div className="grid grid-col  md:grid-cols-3">
+      <div className="container  relative justify-center ">
 
-          {/* grid */}
-          <div className="p-4 content-center "> 
-   
-          </div>
           {/* grid */}
           <div className="p-4 "> 
             <p className=""> © 2025  Ayoola Jeremiah. All rights reserved</p>
           </div>
-          {/* grid */}       
-          <div className="p-4 "> 
- 
-          </div>
-        </div>
 
       </div>       
 
