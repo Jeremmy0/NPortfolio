@@ -6,25 +6,25 @@ import Cta from "@/components/cta"
 const projects = [
   {
     id: 1,
-    title: 'Awesome WP Site',
+    title: 'Cryptic',
     category: 'WordPress',
-    imageUrl: '/images/jeremy.jpg',
+    imageUrl: '/images/web1.png',
     description: 'A WordPress theme I built for a client.',
-    link: 'https://example.com/wp1',
+    link: 'https://cryptik-ruby.vercel.app/',
   },
   {
     id: 2,
-    title: 'Custom React App',
+    title: 'Layers',
     category: 'Custom',
-    imageUrl: '/images/jeremy.jpg',
+    imageUrl: '/images/web2.png',
     description: 'A custom-built React application.',
-    link: 'https://example.com/custom1',
+    link: 'https://layer-app.vercel.app/layer',
   },
   {
     id: 3,
-    title: 'Another Project',
+    title: 'Untapped',
     category: 'WordPress',
-    imageUrl: '/images/jeremy.jpg',
+    imageUrl: '/images/web3.png',
     description: 'Second WP project example.',
     link: 'https://example.com/wp2',
   },
@@ -38,7 +38,7 @@ export default function PortfolioTabs() {
     : projects.filter(p => p.category === tab);
 
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto py-20">
       {/* Tab Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {['All', 'WordPress', 'Custom'].map(t => (
@@ -68,12 +68,12 @@ export default function PortfolioTabs() {
             className="group"
           >
             <div className="w-full overflow-hidden rounded-xl shadow-md">
-              <div className="relative w-full h-56 md:h-64 lg:h-70 overflow-hidden">
+              <div className="relative w-full h-45 md:h-55 lg:h-45 overflow-hidden">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className="w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
                 />
               </div>
               <div className="bg-[var(--background)] dark:bg-[var(--background)] p-4 relative">
