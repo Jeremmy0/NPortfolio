@@ -4,6 +4,7 @@ import NavLink from "../components/navLink";
 import Cta from "../components/cta";
 import { useState } from "react";
 import { useBreakpoint } from "@/hooks/useBreakpoint";
+import Link from "next/link"
 
 
 
@@ -15,7 +16,7 @@ const Nav = () => {
   return (
     <>
       
-      <div className="  w-full  text-[var(--foreground)] z-50 top-0 md:top-4 sticky   ">
+      <section id="nav" className="  w-full  text-[var(--foreground)] z-50 top-0 md:top-4 sticky   ">
         <div className=" px-5 md:px-3  items-center bg-[var(--background)]/50 dark:bg-[var(--background)]/50 dark:md:bg-white/5 md:bg-white/5 backdrop-blur-sm border-1 border-gray-400/10 rounded-none flex justify-between md:rounded-xl  md:justify-self-center   md:ps-2 md:py-2 relative " >
             <NavLink text={"Home"} faIconName="FaHome" href={"/"}/>
 
@@ -25,16 +26,17 @@ const Nav = () => {
           {/* nav links */}
           <div className=" gap-2 text-baseline hidden md:flex ">
               <NavLink text={"About"} faIconName="FaUser" href={"#about"}/>
-              <NavLink text={"#Resume"} faIconName="FaStickyNote" href={"#resume"}/>
-              <NavLink text={"#Experience"} faIconName="FaBriefcase" href={"#experience"}/>
-              <NavLink text={"#My Works"} faIconName="FaLightbulb" href={"#personalWork"}/>
+              <NavLink text={"Resume"} faIconName="FaStickyNote" href={"#resume"}/>
+              <NavLink text={"Experience"} faIconName="FaBriefcase" href={"#experience"}/>
+              <NavLink text={"My Works"} faIconName="FaLightbulb" href={"#personalWork"}/>
 
           </div>
           
           {/* this is the divider */}
           <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  mx-6 hidden md:flex"></div>
-
-          <Cta text={"Book a Call"} className="hidden md:flex" IconName={"FaTelephone" }/>
+          <Link href={"#"}> 
+            <Cta text={"Book a Call"} className="hidden md:flex" IconName={"FaTelephone" } variant={"primary"}/>
+          </Link>
 
           {/* Hamburger  */}
           <div className="md:hidden">
@@ -68,13 +70,15 @@ const Nav = () => {
                 <NavLink MobileOpen={1} text={"Resume"} faIconName="FaStickyNote" href={"#resume"} />
                 <NavLink MobileOpen={1} text={"Experience"} faIconName="FaBriefcase" href={"#experience"} />
                 <NavLink MobileOpen={1} text={"My Works"} faIconName="FaLightbulb" href={"#personalWork"} />
-                <Cta text={"Book a Call"} className="shimmer" IconName={"FaTelephone"} />
+                <Link href={"#"}> 
+                  <Cta text={"Book a Call"} className="shimmer" IconName={"FaTelephone"} variant={"primary"} />
+                </Link>
               </div>
               </>
             )}
           </div> 
         </div>
-      </div>
+      </section>
      
 
      

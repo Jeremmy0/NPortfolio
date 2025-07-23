@@ -2,7 +2,7 @@
 
 const Highlights = () => {
   return (
-    <div className="w-full py-10 px-5 z-10">
+    <section id="highlights" className="w-full py-10 px-5 z-10">
         {/* the text on the highlight section  */}
         <div className=" ">
             <div className=""><p className="text-[var(--foreground)]/30  dark:text-[var(--foreground)]/30  flex">Some Highlights from the past year </p>
@@ -20,23 +20,23 @@ const Highlights = () => {
         {/* Highlights Images part  */}
         <div className="overflow-hidden flex justify-around py-2">
            {/* h-[300px] */}
-            <div className=" inline-flex w-[20%]  p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-3 ">
-              <div className="rounded-md overflow-hidden   -z-10">
+            <div className=" w-[20%]  p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-3  hidden md:inline-flex">
+              <div className="rounded-md overflow-hidden  ">
                 <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
-            <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-4 ">
-              <div className="rounded-md overflow-hidden   -z-10">
+            <div className=" inline-flex w-[30%] md:w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-4 ">
+              <div className="rounded-md overflow-hidden ">
                 <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
-            <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-2 ">
-              <div className="rounded-md overflow-hidden   -z-10">
+            <div className=" inline-flex w-[30%] md:w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 -rotate-2 ">
+              <div className="rounded-md overflow-hidden ">
                 <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
-            <div className=" inline-flex w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-3 ">
-              <div className="rounded-md overflow-hidden   -z-10">
+            <div className=" inline-flex w-[30%] md:w-[20%] p-3 rounded-lg   border-[0.5px] border-[var(--foreground)]/30 dark:border-[var(--foreground)]/30 rotate-3 ">
+              <div className="rounded-md overflow-hidden ">
                 <img className="object-fit  " src="/images/jeremy.jpg" alt="Ayoola Jeremiah " />
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Highlights = () => {
 
               
 
-    </div>
+    </section>
   )
 }
 

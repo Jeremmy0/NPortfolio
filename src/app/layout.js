@@ -7,7 +7,8 @@ import { gsap } from "gsap";
 
 const sGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '500', '600'], // regular, medium, semi-bold
+  weight: ['300', '500', '600'], 
+  // regular, medium, semi-bold
   variable: '--font-space-grotesk',
 })
 const wSans= Work_Sans({
@@ -15,26 +16,26 @@ const wSans= Work_Sans({
   weight:["400"],
   variable: "--font-work-sans"
 })
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['600', '700'], // bold
-  variable: '--font-poppins',
-})
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   weight: ['600', '700'], // bold
+//   variable: '--font-poppins',
+// })
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400'], // regular
-  variable: '--font-inter',
-})
+// const inter = Inter({
+//   subsets: ['latin'],
+//   weight: ['400'], // regular
+//   variable: '--font-inter',
+// })
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Ayoola Jeremy || Creative Designer & Developer",
@@ -43,9 +44,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=""  suppressHydrationWarning>
+    <html lang="en" className={` ${wSans.variable} ${sGrotesk.variable} antialiased `}  suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  ${poppins.variable} ${inter.variable} ${wSans.variable} ${sGrotesk.variable}  antialiased `}
+        className=""
+        // ${geistSans.variable} ${geistMono.variable}  ${poppins.variable} ${inter.variable}
       >
         {children} 
       </body>

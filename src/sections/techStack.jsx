@@ -47,7 +47,7 @@ export default function TechStackSection() {
     }, []);
 
   return (
-    <section className="py-20 px-4 md:px-10 lg:px-20 bg-gray-50 dark:bg-gray-950 rounded-4xl  overflow-hidden ">
+    <section id=" techStack" className="py-20 md:px-10 lg:px-20  rounded-4xl  overflow-hidden bg-[var(--foreground)]/8 px-8  border border-[var(--foreground)]/20 ">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left mb-12">
         My Tech Stack
       </h2>

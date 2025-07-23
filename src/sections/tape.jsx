@@ -39,9 +39,9 @@ export const TapeSection = () => {
   }, []);
 
   return (
-    <div className="py-16 lg:py-24 overflow-x-clip relative ">
-      <div className="justify-self-center bg-[var(--background)] dark:bg-[var(--background)] z-10  text-xl md:text-3xl mb-4 md:mb-6 " >
-        I build Solutions that is :
+    <section id="tape" className="py-16 lg:py-24 overflow-x-clip relative ">
+      <div className="justify-self-center bg-[var(--background)] dark:bg-[var(--background)] z-10  text-xl md:text-3xl mb-4 md:mb-6 max-w-[70%] md-w-full text-center" >
+        I don't just code, I build Solutions that are :
       </div>
       <div className=" bg-gradient-to-r from-emerald-300 to-sky-400 rotate-1 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
@@ -64,6 +64,6 @@ export const TapeSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

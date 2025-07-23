@@ -24,7 +24,7 @@ const socialLinks = [
 
 const footer = () => {
   return (
-    <div className="w-fill  z-10 relative rounded-t-3xl overflow-hidden text-black">
+    <section id="footer" className="w-fill  z-10 relative rounded-t-3xl overflow-hidden text-black">
       <div className="absolute top-0 left-0  bg-gradient-to-r from-emerald-300 to-sky-400 w-full h-full  opacity-70 -z-10"></div>
 
        <div className="container  relative pb-4">
@@ -34,7 +34,7 @@ const footer = () => {
           </div>
         </div>
  
-      <div className="container  justify-between flex">
+      <div className="container  justify-between flex flex-col md:flex-row ">
 
           {/* grid */}
           <div className="p-4 content-center "> 
@@ -43,7 +43,7 @@ const footer = () => {
                   const Logo = FaIcons[link.logo]
                   return(
                     <div key={idx} className="px-2 py-1 gap-1 inline-flex">
-                      <Logo className="place-self-center text-3xl text-white opacity-100"/>
+                      <Logo className="place-self-center text-3xl text-white opacity-100 hover:scale-110 transition "/>
                     </div>
                   )
                   })}             
@@ -55,8 +55,8 @@ const footer = () => {
                 <h3 className="">Send an email or Dm & i'll get back to you ASAP</h3>
                 <form action="/jja" className="mt-2">
                   <div className="flex gap-1">
-                    <input type="text" className="bg-white rounded-full ps-2 text-black flex-10/12 "/>
-                    <Cta  className="flex-2/12 "/>
+                    <input type="text" className="bg-white rounded-full ps-2 text-black flex-11/12 "/>
+                    <Cta  className="flex-1/12 shimmer bg-black text-white rounded-lg ps-1 group"/>
                   </div>
                 </form>
             </div>
@@ -66,12 +66,12 @@ const footer = () => {
       <div className="container  relative justify-content-center ">
           {/* grid */}
           <div className="p-4 flex-inline  justify-self-center "> 
-            <p className="">Designed & Developed by Ayoola Jeremiah  © 2025. All rights reserved</p>
+            <p className="text-xs md:text-sm text-center">Designed & Developed by Ayoola Jeremiah  © 2025. All rights reserved</p>
           </div>
 
       </div>       
 
-    </div>
+    </section>
   )
 }
 

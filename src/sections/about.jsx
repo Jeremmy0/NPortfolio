@@ -56,7 +56,7 @@ const About = () => {
   // bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white
   return (
     
-    <section className='container items-center justify-center  py-20'  >
+    <section className='container items-center justify-center  py-20'  id="about">
            {/* About Heading  */}
         <div className="justify-items-center mb-6">
           <h6 className="">History</h6>
@@ -66,18 +66,18 @@ const About = () => {
           <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             {/* Left Side - Text Content */}
             <div>
-              <p className="about-text text-lg md:text-xl text-gray-300 leading-relaxed text-center md:text-left ">A passionate web designer and Developer, crafting award-winning digital experiences. Always exploring the limitless possibilities opf creativity and Technology, With over 2 years of experience in building sleek, responsive, and high-performing web applications which feels effortyless to use, I specialize in turning ideas into scalable digital solutions. 
+              <p className="about-text text-lg md:text-xl text-[var(--foreground)] dark:text-[var(--foreground)]leading-relaxed text-center md:text-left ">A passionate web designer and Developer,who loves building and crafting award-winning digital experiences. Always exploring the limitless possibilities of creativity and Technology, With over 2 years of experience in building sleek, responsive, and high-performing web applications which feels effortyless to use, I specialize in turning ideas into scalable digital solutions. 
               </p>
             </div>
 
             {/* Right Side - Image / Avatar */}
             {/*transition-transform hover:scale-105 duration-300 */}
             <div className="about-image relative  overflow-hidden rounded-2xl p-1 w-[220px] justify-self-center">
-              <div className="w-[250%] absolute bg-green-400 h-[20px] animate-spin transition-all kmklmkl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-sm"></div>
+              <div className="w-[250%] absolute bg-green-400 h-[20px] animate-spin transition-all  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-sm -z-10"></div>
                <img
                 src="/images/jeremy.jpg "
                 alt="Developer portrait"
-                className="object-bottom hover:scale-110 grayscale hover:grayscale-0 transition-all duration-200  rounded-2xl shadow-2x w-[220px]  "
+                className="object-bottom hover:scale-110  md:greycale hover-md:grayscale-0 transition-all duration-200  rounded-2xl shadow-2x w-[220px]  "
                />
             </div>
 
