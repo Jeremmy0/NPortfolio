@@ -25,7 +25,7 @@ const techStack = [
   { name: 'Git', icon: FaGitAlt, color: '#F05032' },
   { name: 'Figma', icon: FaFigma, color: '#F24E1E' },
   { name: 'Vercel', icon: SiVercel, color: '#000000' },
-  { name: 'Framer Motion', icon: SiFramer, color: '#0055FF' },
+  { name: 'Framer', icon: SiFramer, color: '#0055FF' },
 ];
 
 export default function TechStackSection() {
@@ -47,19 +47,19 @@ export default function TechStackSection() {
     }, []);
 
   return (
-    <section id=" techStack" className="py-20 md:px-10 lg:px-20  rounded-4xl  overflow-hidden bg-[var(--foreground)]/8 px-8  border border-[var(--foreground)]/20 ">
+    <section id=" techStack" className="py-20 md:px-10 lg:px-20 lg:py-15 rounded-4xl  overflow-hidden bg-[var(--foreground)]/8 px-8  border border-[var(--foreground)]/20 ">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left mb-12">
         My Tech Stack
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7  gap-6">
         {techStack.map(({ name, icon: Icon, color }, index) => (
           <div
             key={index}
-            className="tech-item group flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="tech-item group flex gap-[4px] items-center justify-center px-2 py-1  bg-white dark:bg-gray-900 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           >
             <Icon
-              className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300"
+              className="text-3xl  group-hover:scale-110 transition-transform duration-300 self-center content-center items-center"
               style={{ color }}
             />
             <span className="text-sm font-medium text-gray-800 dark:text-gray-100 text-center">

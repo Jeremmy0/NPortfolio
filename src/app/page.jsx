@@ -9,6 +9,7 @@ import { TapeSection } from "@/sections/tape"
 import { HeroSection } from "@/sections/heros"
 import Qualifications from "@/sections/qualification"
 import TechStackSection from "@/sections/techStack"
+// import Horizontal from "@/sections/horizontal"
 
 const Home = ()=>{ 
 return(
@@ -20,6 +21,7 @@ return(
             <PortfolioTabs/>
             <TechStackSection/>
             <TapeSection/>
+            {/* <Horizontal/> */}
             {/* <Highlights/> */}
             <Footer/>
 

@@ -91,7 +91,7 @@ export default function PortfolioTabs() {
           <div key={project.id} className=" p-2 rounded-xl bg-[var(--foreground)]/8 border border-[var(--foreground)]/20 relative overflow-hidden group transition ">
               <div className="absolute bg-gradient-to-l from-blue-400  to-green-400  rounded-full blur-[40px] bottom-0 right-0 w-[800px] h-[800px] opacity-80 translate-x-1/2 translate-y-3/4 hidden group-hover:block"> </div>
              <Link   href={project.link}  target="_blank"  rel="noopener noreferrer" className="">
-            <div className="w-full overflow-hidden rounded-xl shadow-md">
+            <div className="w-full overflow-hidden rounded-lg shadow-md">
               <div className="relative w-full h-45 md:h-45 lg:h-45 overflow-hidden">
                 <Image
                   src={project.imageUrl}

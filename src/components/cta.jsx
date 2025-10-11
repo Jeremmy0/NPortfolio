@@ -9,7 +9,6 @@ const Cta = ({text, className, variant,href,IconName}) =>{
     noStyle : "flex gap-2",
 
   }
-  console.log(Variants[variant], variant )
   return(
       <button href={`${href}`} className={` ${className} ${Variants[variant]}`}>
         <div  className=" ">{text}</div>
