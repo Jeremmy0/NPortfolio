@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { FaClock, FaEnvelope, FaMapMarkerAlt, FaMoon, FaSun } from "react-icons/fa";
 import Cta from "../components/cta";
 import Tag from "../components/tag";
-import DashedCenter from '../components/dashedCenter';
 import Link from  "next/link"
 
 const Hero = () => {
