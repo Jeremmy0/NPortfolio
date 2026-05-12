@@ -18,7 +18,7 @@ const projects = [
     title: 'Cryptic',
     category: 'Custom',
     imageUrl: '/images/web1.png',
-    description: 'Modern cryptocurrency platform interface featuring real-time market insights, and immersive fintech-inspired user experience.',
+    description: 'Modern cryptocurrency platform interface featuring real-time market insights.',
     link: 'https://cryptik-ruby.vercel.app/',
   },
   {
