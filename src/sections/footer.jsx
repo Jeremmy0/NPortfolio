@@ -25,7 +25,7 @@ const Footer = () => {
     e.preventDefault()
 
     const formData = new FormData(e.currentTarget)
-    const message = formData.get("message") as string
+    const message = formData.get("message")
 
     const whatsappMessage = `Hello Ayoola, ${message}`
 
@@ -45,6 +45,7 @@ const Footer = () => {
 
       <div className="container relative pb-4">
         <div className="w-[90%] md:max-w-[70%] items-baseline justify-self-center justify-items-center pt-10 pb-5">
+          
           <h2 className="mb-2 md:mb-5 text-3xl md:text-5xl">
             Contact Me
           </h2>
@@ -54,6 +55,7 @@ const Footer = () => {
             to say hello, I'll try my best to get back to you! Feel free to
             reach out about collaborations, projects, or opportunities.
           </p>
+
         </div>
       </div>
 
@@ -64,8 +66,7 @@ const Footer = () => {
           <div className="flex gap-2 justify-center">
 
             {socialLinks.map((link, idx) => {
-              const Logo =
-                FaIcons[link.logo as keyof typeof FaIcons]
+              const Logo = FaIcons[link.logo]
 
               return (
                 <a
@@ -86,6 +87,7 @@ const Footer = () => {
 
         {/* Form */}
         <div className="p-4">
+
           <h3>
             Send a message & I'll get back to you ASAP
           </h3>
@@ -110,18 +112,22 @@ const Footer = () => {
 
             </div>
           </form>
+
         </div>
       </div>
 
       {/* Bottom */}
       <div className="container relative justify-content-center">
         <div className="p-4 justify-self-center">
+          
           <p className="text-xs md:text-sm text-center">
             Designed & Developed by Ayoola Jeremiah © 2025.
             All rights reserved
           </p>
+
         </div>
       </div>
+
     </section>
   )
 }
