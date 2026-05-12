@@ -1,3 +1,4 @@
+"use client"
 import Cta from "@/components/cta"
 import * as FaIcons from "react-icons/fa"
 
