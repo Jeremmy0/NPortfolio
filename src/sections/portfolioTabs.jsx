@@ -6,22 +6,6 @@ import Link from "next/link"
 
 const projects = [
   {
-    id: 1,
-    title: 'Cryptic',
-    category: 'Custom',
-    imageUrl: '/images/web1.png',
-    description: '.',
-    link: 'https://cryptik-ruby.vercel.app/',
-  },
-  {
-    id: 2,
-    title: 'Layers',
-    category: 'Custom',
-    imageUrl: '/images/web2.png',
-    description: 'A custom-built React application.',
-    link: 'https://layer-app.vercel.app/layer',
-  },
-  {
     id: 3,
     title: 'Untapped',
     category: 'Custom',
@@ -29,6 +13,23 @@ const projects = [
     description: 'Second WP project example.',
     link: 'https://example.com/wp2',
   },
+  {
+    id: 1,
+    title: 'Cryptic',
+    category: 'Custom',
+    imageUrl: '/images/web1.png',
+    description: 'Modern cryptocurrency platform interface featuring real-time market insights, and immersive fintech-inspired user experience.',
+    link: 'https://cryptik-ruby.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Layers',
+    category: 'Custom',
+    imageUrl: '/images/web2.png',
+    description: 'AI-driven knowledge hub designed to organize ideas, streamline learning, and enhance productivity.',
+    link: 'https://layer-app.vercel.app/layer',
+  },
+
   {
     id: 5,
     title: 'Sozzy Graphics',
