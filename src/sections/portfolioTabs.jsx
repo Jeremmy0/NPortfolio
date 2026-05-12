@@ -8,9 +8,9 @@ const projects = [
   {
     id: 1,
     title: 'Cryptic',
-    category: 'WordPress',
+    category: 'Custom',
     imageUrl: '/images/web1.png',
-    description: 'A WordPress theme I built for a client.',
+    description: '.',
     link: 'https://cryptik-ruby.vercel.app/',
   },
   {
@@ -24,7 +24,7 @@ const projects = [
   {
     id: 3,
     title: 'Untapped',
-    category: 'WordPress',
+    category: 'Custom',
     imageUrl: '/images/web3.png',
     description: 'Second WP project example.',
     link: 'https://example.com/wp2',
@@ -45,14 +45,14 @@ const projects = [
     description: 'A Shortlet service apartment site.',
     link: 'https://shallomapartment.com/',
   },
-  // {
-  //   id: 6,
-  //   title: 'Untapped',
-  //   category: 'WordPress',
-  //   imageUrl: '/images/web3.png',
-  //   description: 'Second WP project example.',
-  //   link: 'https://example.com/wp2',
-  // },
+  {
+    id: 6,
+    title: 'Nexora',
+    category: 'Custom ',
+    imageUrl: '/images/web3.png',
+    description: 'Nexora builds high-converting websites and brand systems for ambitious companies. Strategy, design, code, engineered for results..',
+    link: 'https://nexxorra.vercel.app/',
+  },
 ];
 
 export default function PortfolioTabs() {
