@@ -34,7 +34,7 @@ const Nav = () => {
           
           {/* this is the divider */}
           <div className="w-[1px] h-[5vh] rounded-full dark:bg[var(--foreground)]/40 bg-[var(--foreground)]/40  mx-6 hidden md:flex"></div>
-          <Link href={"#"}> 
+          <Link href={"https://wa.me/2348129525774"}> 
             <Cta text={"Book a Call"} className="hidden md:flex" IconName={"FaTelephone" } variant={"primary"}/>
           </Link>
 
