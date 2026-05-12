@@ -5,14 +5,14 @@ import Cta from "@/components/cta"
 import Link from "next/link"
 
 const projects = [
-  {
-    id: 3,
-    title: 'Untapped',
-    category: 'Custom',
-    imageUrl: '/images/web3.png',
-    description: 'Second WP project example.',
-    link: 'https://example.com/wp2',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Untapped',
+  //   category: 'Custom',
+  //   imageUrl: '/images/web3.png',
+  //   description: 'Second WP project example.',
+  //   link: 'https://example.com/wp2',
+  // },
   {
     id: 1,
     title: 'Cryptic',
