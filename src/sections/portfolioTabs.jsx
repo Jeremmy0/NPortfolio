@@ -34,7 +34,7 @@ const projects = [
     title: 'Sozzy Graphics',
     category: 'Custom',
     imageUrl: '/images/web5.png',
-    description: 'A Portfolio site built for a Designer.',
+    description: 'Designer portfolio showcasing branding, graphic design, and digital media services and conversion-focused user experience.',
     link: 'https://sozzygraphics.vercel.app/',
   },
   {
