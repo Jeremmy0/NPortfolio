@@ -42,7 +42,7 @@ const projects = [
     title: 'Shallom Apartment',
     category: 'WordPress',
     imageUrl: '/images/web4.jpg',
-    description: 'A Shortlet service apartment site.',
+    description: 'Luxury serviced apartment website with immersive visuals, and responsive design tailored for premium hospitality brands.',
     link: 'https://shallomapartment.com/',
   },
   {
