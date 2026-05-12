@@ -50,7 +50,7 @@ const projects = [
     title: 'Nexora',
     category: 'Custom ',
     imageUrl: '/images/nexora.png',
-    description: 'Nexora builds high-converting websites and brand systems for ambitious companies. Strategy, design, code, engineered for results..',
+    description: '  Media studio that builds high-converting websites and brand systems for ambitious companies.',
     link: 'https://nexxorra.vercel.app/',
   },
 ];
