@@ -44,8 +44,8 @@ const Footer = () => {
     >
       <div className="absolute top-0 left-0 bg-gradient-to-r from-emerald-300 to-sky-400 w-full h-full opacity-70 -z-10"></div>
 
-      <div className="container relative pb-4">
-        <div className="w-[90%] md:max-w-[70%] items-baseline justify-self-center justify-items-center pt-10 pb-5">
+      <div className="container relative pb-4 ">
+        <div className="w-[90%] md:max-w-[70%] items-baseline justify-self-center justify-items-center pt-10 pb-5 bb">
           
           <h2 className="mb-2 md:mb-5 text-3xl md:text-5xl">
             Contact Me
