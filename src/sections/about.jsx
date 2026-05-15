@@ -73,7 +73,7 @@ const About = () => {
             {/* Right Side - Image / Avatar */}
             {/*transition-transform hover:scale-105 duration-300 */}
             <div className="about-image relative  overflow-hidden rounded-2xl p-1 w-[220px] justify-self-center">
-              <div className="absolute z-100 w-[100px] h-45 rounded-sm bg-white/10"> </div>
+              {/* <div className="absolute z-100 w-[100px] h-45 rounded-sm bg-white/10"> </div> */}
               <div className="w-[250%] absolute bg-green-400 h-[20px] animate-spin transition-all  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-sm -z-10"></div>
                <img
                 src="/images/jeremy.jpg "
