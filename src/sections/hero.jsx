@@ -49,7 +49,7 @@ const Hero = () => {
                 <p className="text-[var(--foreground)]/70 dark:text-[var(--foreground)]/70 pb-3   text-center font-work">I specialize in transforming designs into functional, high-performance , scalable websites and web applications. Minimalist by design. Precise by nature. Built to convert, crafted to impress</p>
               </div>
               <div className="flex flex-col md:flex-row gap-3 mt-3 justify-center  ">
-                <Link className="place-self-center" href={"/AyoolaJ_Resume.pdf"}  download="AyoolaJeremiahResume.pdf"> 
+                <Link className="place-self-center" href={"/Ayoola_Jeremiah_resume.pdf"}  download="AyoolaJeremiahResume.pdf"> 
                   <Cta text={"Download Resume"} className=" shimmer"   variant={"primary"}/>
                 </Link>
                 <div className="">
